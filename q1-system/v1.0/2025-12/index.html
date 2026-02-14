@@ -1,0 +1,1075 @@
+
+<!DOCTYPE html>
+<html data-app-version="4.8.2">
+    <head>
+        <title>Historical Replay Report | cTrader</title>
+
+        <meta name="title" content="Historical Replay Report | cTrader">
+        <meta name="description" content="Backtesting report of a cBot from cTrader Algo: equity, trade statistics, parameters, used symbols, positions, orders, history.">
+
+        <meta name="author" content="Spotware Systems Ltd">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="Content-Security-Policy" content="default-src * 'self' 'unsafe-eval' 'unsafe-inline' data: https: http: gap: ws: wss: blob: filesystem: file:">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+
+        <style type="text/css" data-fela-rehydration="58" data-fela-type="KEYFRAME">@-webkit-keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@-moz-keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes spinner-k1{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@-webkit-keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}@-moz-keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}@keyframes spinner-k2{0%{transform:rotate(0deg)}100%{transform:rotate(-360deg)}}</style><style type="text/css" data-fela-rehydration="58" data-fela-type="RULE">.spinner-a{position:absolute}.spinner-b{margin-left:auto}.spinner-c{margin-bottom:auto}.spinner-d{margin-right:auto}.spinner-e{margin-top:auto}.spinner-f{top:0}.spinner-g{bottom:0}.spinner-h{left:0}.spinner-i{right:0}.spinner-j{width:50px}.spinner-k{height:50px}.spinner-l{display:flex}.spinner-m{z-index:200}.spinner-n:before{content:""}.spinner-o:before{position:absolute}.spinner-p:before{border-style:solid}.spinner-q:before{border-top-left-radius:50%}.spinner-r:before{border-top-right-radius:50%}.spinner-s:before{border-bottom-right-radius:50%}.spinner-t:before{border-bottom-left-radius:50%}.spinner-u:before{display:inline-block}.spinner-v:before{box-sizing:border-box}.spinner-w:before{border-width:7px}.spinner-x:before{border-top-color:transparent}.spinner-y:before{border-left-color:transparent}.spinner-z:before{margin-top:7px}.spinner-ab:before{margin-right:7px}.spinner-ac:before{margin-bottom:7px}.spinner-ae:before{margin-left:7px}.spinner-af:before{width:calc(100% - 14px)}.spinner-ag:before{height:calc(100% - 14px)}.spinner-ah:before{border-right-color:#e75731}.spinner-ai:before{border-bottom-color:#e75731}.spinner-aj:before{animation-iteration-count:infinite}.spinner-ak:before{animation-timing-function:linear}.spinner-al:before{animation-duration:0.6s}.spinner-am:before{animation-name:spinner-k2}.spinner-an:after{content:""}.spinner-ao:after{position:absolute}.spinner-ap:after{border-style:solid}.spinner-aq:after{border-top-left-radius:50%}.spinner-ar:after{border-top-right-radius:50%}.spinner-as:after{border-bottom-right-radius:50%}.spinner-at:after{border-bottom-left-radius:50%}.spinner-au:after{display:inline-block}.spinner-av:after{box-sizing:border-box}.spinner-aw:after{border-width:7px}.spinner-ax:after{border-top-color:transparent}.spinner-ay:after{border-left-color:transparent}.spinner-az:after{width:100%}.spinner-ba:after{height:100%}.spinner-bb:after{border-right-color:rgba(36, 150, 73, 0.9)}.spinner-bc:after{border-bottom-color:rgba(36, 150, 73, 0.9)}.spinner-bd:after{animation-iteration-count:infinite}.spinner-be:after{animation-timing-function:linear}.spinner-bf:after{animation-duration:0.9s}.spinner-bg:after{animation-name:spinner-k1}</style>
+
+        <style>
+            html {
+                height: 100%;
+            }
+
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            #root {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+
+        <!-- startBacktestingReport -->
+        <script type="application/json" id="backtesting-report">{
+  "main": {
+    "utcOffset": 0,
+    "language": "en",
+    "depositAsset": "USD",
+    "depositAssetDigits": 2,
+    "period": "m1",
+    "symbol": "XAUUSD",
+    "brokerTitle": "Spotware",
+    "cBotName": "Q1 System",
+    "roi": 61.36,
+    "netProfit": 6136.47,
+    "startingCapital": 10000,
+    "endingEquity": 16136.47,
+    "endingBalance": 16136.09,
+    "testingPeriod": {
+      "duration": "1m",
+      "startDate": 1764547200000,
+      "endDate": 1767225600000,
+      "formatted": "1m (01-12-2025 - 01-01-2026)"
+    },
+    "accountType": "hedging",
+    "accountLeverage": 1000,
+    "data": {
+      "type": "tickDataFromServer",
+      "isCustom": false,
+      "customName": null
+    },
+    "spread": null,
+    "commissions": {
+      "type": "usdPerMillionUsdVolume",
+      "value": 30,
+      "applyCommissionAutomatically": false
+    },
+    "theme": "dark",
+    "titleKind": "backtesting",
+    "authorNickName": "AlgoQ",
+    "authorLink": "https://ctrader.com/profile/AlgoQ",
+    "cBotLink": "https://ctrader.com/products/3188",
+    "embedded": false
+  },
+  "equity": {
+    "points": [
+      {
+        "balance": 10000,
+        "minEquity": 10000,
+        "maxEquity": 10000,
+        "timestamp": 1764547200000
+      },
+      {
+        "balance": 8280.880000000001,
+        "minEquity": 8280.78,
+        "maxEquity": 11855.82,
+        "timestamp": 1764667656342
+      },
+      {
+        "balance": 6568.280000000001,
+        "minEquity": 6568.080000000001,
+        "maxEquity": 8536.080000000002,
+        "timestamp": 1764780913038
+      },
+      {
+        "balance": 4850.68,
+        "minEquity": 4850.380000000001,
+        "maxEquity": 8541.42,
+        "timestamp": 1765206306442
+      },
+      {
+        "balance": 3069.0800000000004,
+        "minEquity": 3068.6800000000003,
+        "maxEquity": 4943.72,
+        "timestamp": 1765395663341
+      },
+      {
+        "balance": 8003.450000000001,
+        "minEquity": 2057.3700000000003,
+        "maxEquity": 8003.33,
+        "timestamp": 1765535697443
+      },
+      {
+        "balance": 12933.460000000001,
+        "minEquity": 6559.970000000001,
+        "maxEquity": 12933.640000000001,
+        "timestamp": 1766370697525
+      },
+      {
+        "balance": 17869.61,
+        "minEquity": 11981.800000000001,
+        "maxEquity": 17870.09,
+        "timestamp": 1766765050842
+      },
+      {
+        "balance": 16136.09,
+        "minEquity": 16136.470000000001,
+        "maxEquity": 19036.47,
+        "timestamp": 1766967903743
+      },
+      {
+        "balance": 16136.09,
+        "minEquity": 16135.43,
+        "maxEquity": 16136.47,
+        "timestamp": 1767311994141
+      }
+    ],
+    "maxBalanceDrawdownPercent": 69.3092,
+    "maxEquityDrawdownPercent": 82.64675070977798,
+    "maxBalanceDrawdownAbsolute": 6930.92,
+    "maxEquityDrawdownAbsolute": 9798.449999999999
+  },
+  "tradeStatistics": {
+    "netProfit": {
+      "all": 6136.09,
+      "long": 6136.09,
+      "short": 0
+    },
+    "profitFactor": {
+      "all": 1.71,
+      "long": 1.71,
+      "short": 0
+    },
+    "commissions": {
+      "all": -103.54,
+      "long": -103.54,
+      "short": 0
+    },
+    "swaps": {
+      "all": -21.87,
+      "long": -21.87,
+      "short": 0
+    },
+    "totalTrades": {
+      "all": 8,
+      "long": 8,
+      "short": 0
+    },
+    "winningTrades": {
+      "all": 3,
+      "long": 3,
+      "short": 0
+    },
+    "maxConsecutiveWinningTrades": {
+      "all": 3,
+      "long": 3,
+      "short": 0
+    },
+    "largestWinningTrade": {
+      "all": 4936.15,
+      "long": 4936.15,
+      "short": 0
+    },
+    "losingTrades": {
+      "all": 5,
+      "long": 5,
+      "short": 0
+    },
+    "maxConsecutiveLosingTrades": {
+      "all": 4,
+      "long": 4,
+      "short": 0
+    },
+    "largestLosingTrade": {
+      "all": -1781.6,
+      "long": -1781.6,
+      "short": 0
+    },
+    "averageTrade": {
+      "all": 767.01,
+      "long": 767.01,
+      "short": 0
+    }
+  },
+  "parameters": [
+    {
+      "group": null,
+      "displayName": "Take Profit (pips)",
+      "propertyName": "TakeProfit",
+      "value": 9900
+    },
+    {
+      "group": null,
+      "displayName": "Stop Loss (pips)",
+      "propertyName": "StopLoss",
+      "value": 3400
+    },
+    {
+      "group": null,
+      "displayName": "Volume (lots)",
+      "propertyName": "Volume",
+      "value": 0.5
+    }
+  ],
+  "usedSymbols": [
+    {
+      "symbol": "XAUUSD",
+      "period": "m1",
+      "swapTime": "20:59",
+      "baseAsset": "XAU",
+      "baseAssetDigits": 2,
+      "quoteAsset": "USD",
+      "quoteAssetDigits": 2,
+      "commissions": {
+        "type": "usdPerMillionUsdVolume",
+        "value": 30,
+        "applyCommissionAutomatically": false
+      },
+      "swapLong": -2.0895,
+      "swapShort": -1.92,
+      "threeDaySwaps": "wednesday",
+      "weekendSwaps": false,
+      "swapPeriods": 24,
+      "gracePeriods": 0,
+      "digits": 2,
+      "lotSize": 100,
+      "stepVolume": 1,
+      "pipPosition": 2,
+      "swapCalculationType": "pips"
+    }
+  ],
+  "positions": {
+    "columns": [
+      "id",
+      "symbol",
+      "quantity",
+      "volume",
+      "direction",
+      "entryPrice",
+      "tp",
+      "sl",
+      "commissions",
+      "closingCommissions",
+      "swaps",
+      "created",
+      "label",
+      "comment",
+      "pips",
+      "gross",
+      "net"
+    ],
+    "items": [],
+    "marginUsed": 0,
+    "freeMargin": 16136.47,
+    "marginLevel": null,
+    "unrealizedNet": 0.38000000000000433,
+    "unrealizedGross": 0
+  },
+  "orders": {
+    "columns": [
+      "id",
+      "direction",
+      "orderType",
+      "created",
+      "symbol",
+      "quantity",
+      "volume",
+      "submittedPrice",
+      "distance",
+      "tp",
+      "sl"
+    ],
+    "items": []
+  },
+  "history": {
+    "columns": [
+      "id",
+      "label",
+      "entryTime",
+      "symbol",
+      "quantity",
+      "volume",
+      "direction",
+      "entryPrice",
+      "commissions",
+      "swaps",
+      "closePrice",
+      "closeTime",
+      "net",
+      "pips",
+      "gross"
+    ],
+    "items": [
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 2,
+        "net": -1719.12,
+        "gross": -1705.5,
+        "entryTime": 1764548857232,
+        "closeTime": 1764667656342,
+        "entryPrice": 4227.16,
+        "closePrice": 4193.05,
+        "commissions": -12.58,
+        "swaps": -1.04,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 8280.880000000001,
+        "quantity": 0.5,
+        "pips": -3411
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 4,
+        "net": -1712.6,
+        "gross": -1700,
+        "entryTime": 1764770099443,
+        "closeTime": 1764780913038,
+        "entryPrice": 4236.22,
+        "closePrice": 4202.22,
+        "commissions": -12.6,
+        "swaps": 0,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 6568.280000000001,
+        "quantity": 0.5,
+        "pips": -3400
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 6,
+        "net": -1717.6,
+        "gross": -1704,
+        "entryTime": 1764912512533,
+        "closeTime": 1765206306442,
+        "entryPrice": 4219.51,
+        "closePrice": 4185.43,
+        "commissions": -12.56,
+        "swaps": -1.04,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 4850.68,
+        "quantity": 0.5,
+        "pips": -3407.9999999999995
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 8,
+        "net": -1781.6,
+        "gross": -1768,
+        "entryTime": 1765296666832,
+        "closeTime": 1765395663341,
+        "entryPrice": 4219.15,
+        "closePrice": 4183.79,
+        "commissions": -12.56,
+        "swaps": -1.04,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 3069.0800000000004,
+        "quantity": 0.5,
+        "pips": -3536
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 10,
+        "net": 4934.37,
+        "gross": 4951.5,
+        "entryTime": 1765397055043,
+        "closeTime": 1765535697443,
+        "entryPrice": 4224.21,
+        "closePrice": 4323.24,
+        "commissions": -12.96,
+        "swaps": -4.17,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 8003.450000000001,
+        "quantity": 0.5,
+        "pips": 9903
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 12,
+        "net": 4930.01,
+        "gross": 4951.5,
+        "entryTime": 1765555091550,
+        "closeTime": 1766370697525,
+        "entryPrice": 4286.4,
+        "closePrice": 4385.43,
+        "commissions": -13.16,
+        "swaps": -8.33,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 12933.460000000001,
+        "quantity": 0.5,
+        "pips": 9903
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 14,
+        "net": 4936.15,
+        "gross": 4955,
+        "entryTime": 1766444502245,
+        "closeTime": 1766765050842,
+        "entryPrice": 4449.41,
+        "closePrice": 4548.51,
+        "commissions": -13.64,
+        "swaps": -5.21,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 17869.61,
+        "quantity": 0.5,
+        "pips": 9910
+      },
+      {
+        "symbol": "XAUUSD",
+        "direction": "buy",
+        "id": 16,
+        "net": -1733.52,
+        "gross": -1719,
+        "entryTime": 1766769303740,
+        "closeTime": 1766967903743,
+        "entryPrice": 4525.82,
+        "closePrice": 4491.44,
+        "commissions": -13.48,
+        "swaps": -1.04,
+        "volume": 50,
+        "label": "Q1 System",
+        "comment": null,
+        "balance": 16136.09,
+        "quantity": 0.5,
+        "pips": -3438
+      }
+    ]
+  },
+  "entries": {
+    "entriesByHours": {
+      "zero": {
+        "totalTrades": 1
+      },
+      "one": {
+        "totalTrades": 0
+      },
+      "two": {
+        "totalTrades": 0
+      },
+      "three": {
+        "totalTrades": 0
+      },
+      "four": {
+        "totalTrades": 0
+      },
+      "five": {
+        "totalTrades": 1
+      },
+      "six": {
+        "totalTrades": 0
+      },
+      "seven": {
+        "totalTrades": 0
+      },
+      "eight": {
+        "totalTrades": 0
+      },
+      "nine": {
+        "totalTrades": 0
+      },
+      "ten": {
+        "totalTrades": 0
+      },
+      "eleven": {
+        "totalTrades": 0
+      },
+      "twelve": {
+        "totalTrades": 0
+      },
+      "thirteen": {
+        "totalTrades": 1
+      },
+      "fourteen": {
+        "totalTrades": 0
+      },
+      "fifteen": {
+        "totalTrades": 1
+      },
+      "sixteen": {
+        "totalTrades": 1
+      },
+      "seventeen": {
+        "totalTrades": 1
+      },
+      "eighteen": {
+        "totalTrades": 0
+      },
+      "nineteen": {
+        "totalTrades": 0
+      },
+      "twenty": {
+        "totalTrades": 1
+      },
+      "twentyOne": {
+        "totalTrades": 0
+      },
+      "twentyTwo": {
+        "totalTrades": 0
+      },
+      "twentyThree": {
+        "totalTrades": 1
+      }
+    },
+    "entriesByWeekdays": {
+      "sunday": {
+        "totalTrades": 0
+      },
+      "monday": {
+        "totalTrades": 2
+      },
+      "tuesday": {
+        "totalTrades": 1
+      },
+      "wednesday": {
+        "totalTrades": 2
+      },
+      "thursday": {
+        "totalTrades": 0
+      },
+      "friday": {
+        "totalTrades": 3
+      },
+      "saturday": {
+        "totalTrades": 0
+      }
+    },
+    "entriesByMonths": {
+      "january": {
+        "totalTrades": 0
+      },
+      "february": {
+        "totalTrades": 0
+      },
+      "march": {
+        "totalTrades": 0
+      },
+      "april": {
+        "totalTrades": 0
+      },
+      "may": {
+        "totalTrades": 0
+      },
+      "june": {
+        "totalTrades": 0
+      },
+      "july": {
+        "totalTrades": 0
+      },
+      "august": {
+        "totalTrades": 0
+      },
+      "september": {
+        "totalTrades": 0
+      },
+      "october": {
+        "totalTrades": 0
+      },
+      "november": {
+        "totalTrades": 0
+      },
+      "december": {
+        "totalTrades": 8
+      }
+    }
+  },
+  "profitsLosses": {
+    "profitsLossesByHours": {
+      "zero": {
+        "winningTrades": 0,
+        "losingTrades": 1
+      },
+      "one": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "two": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "three": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "four": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "five": {
+        "winningTrades": 0,
+        "losingTrades": 1
+      },
+      "six": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "seven": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "eight": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "nine": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "ten": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "eleven": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twelve": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "thirteen": {
+        "winningTrades": 0,
+        "losingTrades": 1
+      },
+      "fourteen": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "fifteen": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "sixteen": {
+        "winningTrades": 0,
+        "losingTrades": 1
+      },
+      "seventeen": {
+        "winningTrades": 0,
+        "losingTrades": 1
+      },
+      "eighteen": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "nineteen": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twenty": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      },
+      "twentyOne": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twentyTwo": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "twentyThree": {
+        "winningTrades": 1,
+        "losingTrades": 0
+      }
+    },
+    "profitsLossesByWeekdays": {
+      "sunday": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "monday": {
+        "winningTrades": 1,
+        "losingTrades": 1
+      },
+      "tuesday": {
+        "winningTrades": 0,
+        "losingTrades": 1
+      },
+      "wednesday": {
+        "winningTrades": 1,
+        "losingTrades": 1
+      },
+      "thursday": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "friday": {
+        "winningTrades": 1,
+        "losingTrades": 2
+      },
+      "saturday": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      }
+    },
+    "profitsLossesByMonth": {
+      "january": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "february": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "march": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "april": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "may": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "june": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "july": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "august": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "september": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "october": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "november": {
+        "winningTrades": 0,
+        "losingTrades": 0
+      },
+      "december": {
+        "winningTrades": 3,
+        "losingTrades": 5
+      }
+    }
+  },
+  "roi": {
+    "period1w": {
+      "totalRoi": -9.70093919229351,
+      "points": [
+        {
+          "timestamp": 1766765050842,
+          "roi": 0
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": -9.70093919229351
+        },
+        {
+          "timestamp": 1767311994141,
+          "roi": -9.70093919229351
+        }
+      ]
+    },
+    "period1m": {
+      "totalRoi": 94.8596042932635,
+      "points": [
+        {
+          "timestamp": 1764667656342,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764720000000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764806400000,
+          "roi": -20.681376858498133
+        },
+        {
+          "timestamp": 1765238400000,
+          "roi": -41.423133773222176
+        },
+        {
+          "timestamp": 1765411200000,
+          "roi": -62.93775540763784
+        },
+        {
+          "timestamp": 1765584000000,
+          "roi": -3.3502477997507545
+        },
+        {
+          "timestamp": 1766448000000,
+          "roi": 56.18460839910734
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 115.79361130701082
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": 94.8596042932635
+        },
+        {
+          "timestamp": 1767311994141,
+          "roi": 94.8596042932635
+        }
+      ]
+    },
+    "period3m": {
+      "totalRoi": 61.360899999999994,
+      "points": [
+        {
+          "timestamp": 1764547200000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764633600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764720000000,
+          "roi": -17.19119999999999
+        },
+        {
+          "timestamp": 1764806400000,
+          "roi": -34.31719999999999
+        },
+        {
+          "timestamp": 1765238400000,
+          "roi": -51.493199999999995
+        },
+        {
+          "timestamp": 1765411200000,
+          "roi": -69.3092
+        },
+        {
+          "timestamp": 1765584000000,
+          "roi": -19.96549999999999
+        },
+        {
+          "timestamp": 1766448000000,
+          "roi": 29.33460000000001
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 78.6961
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": 61.360899999999994
+        },
+        {
+          "timestamp": 1767311994141,
+          "roi": 61.360899999999994
+        }
+      ]
+    },
+    "period6m": {
+      "totalRoi": 61.360899999999994,
+      "points": [
+        {
+          "timestamp": 1764547200000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764633600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764720000000,
+          "roi": -17.19119999999999
+        },
+        {
+          "timestamp": 1764806400000,
+          "roi": -34.31719999999999
+        },
+        {
+          "timestamp": 1765238400000,
+          "roi": -51.493199999999995
+        },
+        {
+          "timestamp": 1765411200000,
+          "roi": -69.3092
+        },
+        {
+          "timestamp": 1765584000000,
+          "roi": -19.96549999999999
+        },
+        {
+          "timestamp": 1766448000000,
+          "roi": 29.33460000000001
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 78.6961
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": 61.360899999999994
+        },
+        {
+          "timestamp": 1767311994141,
+          "roi": 61.360899999999994
+        }
+      ]
+    },
+    "period1y": {
+      "totalRoi": 61.360899999999994,
+      "points": [
+        {
+          "timestamp": 1764547200000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764633600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764720000000,
+          "roi": -17.19119999999999
+        },
+        {
+          "timestamp": 1764806400000,
+          "roi": -34.31719999999999
+        },
+        {
+          "timestamp": 1765238400000,
+          "roi": -51.493199999999995
+        },
+        {
+          "timestamp": 1765411200000,
+          "roi": -69.3092
+        },
+        {
+          "timestamp": 1765584000000,
+          "roi": -19.96549999999999
+        },
+        {
+          "timestamp": 1766448000000,
+          "roi": 29.33460000000001
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 78.6961
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": 61.360899999999994
+        },
+        {
+          "timestamp": 1767311994141,
+          "roi": 61.360899999999994
+        }
+      ]
+    },
+    "periodAll": {
+      "totalRoi": 61.360899999999994,
+      "points": [
+        {
+          "timestamp": 1764547200000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764633600000,
+          "roi": 0
+        },
+        {
+          "timestamp": 1764720000000,
+          "roi": -17.19119999999999
+        },
+        {
+          "timestamp": 1764806400000,
+          "roi": -34.31719999999999
+        },
+        {
+          "timestamp": 1765238400000,
+          "roi": -51.493199999999995
+        },
+        {
+          "timestamp": 1765411200000,
+          "roi": -69.3092
+        },
+        {
+          "timestamp": 1765584000000,
+          "roi": -19.96549999999999
+        },
+        {
+          "timestamp": 1766448000000,
+          "roi": 29.33460000000001
+        },
+        {
+          "timestamp": 1766793600000,
+          "roi": 78.6961
+        },
+        {
+          "timestamp": 1767052800000,
+          "roi": 61.360899999999994
+        },
+        {
+          "timestamp": 1767311994141,
+          "roi": 61.360899999999994
+        }
+      ]
+    }
+  }
+}</script>
+        <!-- endBacktestingReport -->
+    </head>
+    <body>
+        <div class="spinner-a spinner-b spinner-c spinner-d spinner-e spinner-f spinner-g spinner-h spinner-i spinner-j spinner-k spinner-l spinner-m spinner-n spinner-o spinner-p spinner-q spinner-r spinner-s spinner-t spinner-u spinner-v spinner-w spinner-x spinner-y spinner-z spinner-ab spinner-ac spinner-ae spinner-af spinner-ag spinner-ah spinner-ai spinner-aj spinner-ak spinner-al spinner-am spinner-an spinner-ao spinner-ap spinner-aq spinner-ar spinner-as spinner-at spinner-au spinner-av spinner-aw spinner-ax spinner-ay spinner-az spinner-ba spinner-bb spinner-bc spinner-bd spinner-be spinner-bf spinner-bg waitingIndicator" data-test-id="loader"></div>
+        <div id="root"></div>
+
+            <script id="init" defer src="https://backtesting.ctrader.com/v5.0.0/bundle/index-31bd62a5e13b796fd66a.js"></script>
+
+        <script type="text/javascript" id="app-init">
+            var script = document.getElementById('init');
+            script.onload = () => {
+                initApp('root');
+
+                script.remove();
+                document.getElementById('app-init').remove();
+            }
+        </script>
+    </body>
+</html>
